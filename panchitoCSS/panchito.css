@@ -1,0 +1,27 @@
+#div2{
+    height: 40px;
+    width: 350px;
+    background-color: red;
+
+    border-radius: 30px;
+}
+
+.div1y3{
+    height:  40px;
+    width: 300px;
+    background-color: #ff7300;
+}
+
+#div1{
+    border-radius: 15px 15px 0 0;
+    border-bottom: 5px solid #ff5e00;
+}
+
+#div3{
+    border-radius: 0 0 15px 15px;
+    border-top: 5px solid #ff5e00;
+}
+
+body{
+    margin: 0 auto;
+}
