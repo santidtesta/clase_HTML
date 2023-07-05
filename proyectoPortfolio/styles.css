@@ -2,74 +2,46 @@
 
 body{
     font-family: Rubik, Verdana, sans-serif;
-    color: white;
+    width: 100%;
 }
 
-.navbarM{
-    width: 100%;
 
-    background-color: #BA181B;
+nav{
+    color: black;
 }
 
 header{
     display: flex;
-    height: 55vh;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-    background-color: #E5383B;
+    justify-content: space-evenly;
+    
+    margin: 10px;
 }
-
 
 header img{
-    height: 80%;
+    width: 20%;
     border-radius: 150px;
-    margin: 10px;
-
-    padding: 1.4%;
 }
 
-@media only screen and (max-width: 500px){
-    header img{
-        width: 80%;
-        height: auto;
+header h4{
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 576px){
+    header h4{
+        font-size: 15px;
+    }
+    header h5{
+        font-size: 8px;
     }
 }
 
-@media only screen and (max-width: 600px){
-    header img{
-        width: 60%;
-        height: auto;
+@media screen and (max-width: 768px){
+    header h4{
+        font-size: 18px;
+    }
+    header h5{
+        font-size: 12px;
     }
 }
 
-@media only screen and (max-width: 912px){
-    header img{
-        width: 35%;
-        height: auto;
-    }
-}
-
-#portfolio{
-    padding: 15px;
-}
-
-#portfolio img{
-
-    width: 65%;
-    height: 100%;
-
-    border-radius: 20px;
-
-
-}
-
-#aboutMe{
-    background-color: #BA181B;
-
-    display: block;
-    text-align: center;
-
-    padding: 10px 15px;
-}
