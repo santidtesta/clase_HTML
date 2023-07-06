@@ -8,7 +8,7 @@
   <title>Document</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg" style="background-color: #E5383B;">
+  <nav class="navbar navbar-expand-lg" style="background-color: #BA181B;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Santino Testa</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false">
@@ -41,7 +41,7 @@
       </div>
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h4>Santino Testa</h4>
+          <h3>Santino Testa</h3>
         </div>
       </div>
       <div class="row">
@@ -68,9 +68,58 @@
   </main>
 
   <div class="aboutMe">
+    <div id="sobreMi">
     <h2>Sobre Mi</h2>
     <br>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quos asperiores eveniet minima dolor velit ipsam non quidem, error aspernatur placeat, numquam maxime perferendis aut quasi quod earum provident molestias itaque voluptas blanditiis consectetur dolorem minus! Beatae sit culpa odio!</p>
+  </div>
+  </div>
+
+  <div class="container">
+    
+    <div id="formularioContact">
+
+      <h3>Contactame</h3>
+
+      <form>
+        <label for="name">Nombre: 
+          <br>
+          <input type="text" name="nombre" id="name" required>
+        </label>
+        <label for="mail">Email
+          <br>
+          <input type="email" name="mail" id="mail" required>
+        </label>
+        <label for="telNum">Numero de Telefono
+          <br>
+          <input type="tel" name="telNum" id="telNum">
+        </label>
+        <label for="mensaje">Mensaje
+          <br>
+          <textarea name="mensaje" id="message" cols="30" rows="5"></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary mb-3" id="btn-submit">Enviar Mensaje</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="row" id="datosEmpresa">
+      <div class="col" id="direccion">
+        <div id="container">
+          <h5>direccion</h5>
+          <p>Florida 726 cp 1005, caba</p>
+        </div>
+      </div>
+      <div class="col" id="redes">
+        <a href="https://www.instagram.com/santidtesta/?hl=es"><img src="img/brand-instagram.png" alt=""></a>
+        <a href="https://twitter.com/santidtesta"><img src="img/brand-twitter.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/santino-testa-8a70ab23b/"><img src="img/brand-linkedin.png" alt=""></a>
+        <a href="https://github.com/santidtesta"><img src="img/brand-github.png" alt=""></a>
+      </div>
+    </div>
   </div>
 
 </body>

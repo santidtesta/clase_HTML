@@ -3,6 +3,7 @@
 body{
     font-family: Rubik, Verdana, sans-serif;
     width: 100%;
+    background-color: #E5383B;
 }
 
 
@@ -27,26 +28,6 @@ header h4{
     padding-top: 10px;
 }
 
-@media screen and (max-width: 576px){
-    header h4{
-        font-size: 15px;
-    }
-    header h5{
-        font-size: 8px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    header h4{
-        font-size: 18px;
-    }
-    header h5{
-        font-size: 12px;
-    }
-}
-
-
-
 .col{
     display: flex;
     align-items: center;
@@ -59,12 +40,141 @@ header h4{
 }
 
 .aboutMe{
+    margin-top: 15px;
+    padding: 10px 0 10px;
+    background-color: #BA181B;
+}
+
+#sobreMi{
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    margin-top: 15px;
-    background-color: #E5383B;
-
+    text-align: center;
     
+
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#formularioContact{
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#formularioContact h3{
+    display: flex;
+    justify-content: center;
+}
+
+
+#formularioContact form{
+    display: flex;
+
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#formularioContact form input[type="text"], input[type="email"], input[type="tel"]{
+    width: 100%;
+    border-radius: 15px;
+
+    border: 0;
+    background-color: #F5F3F4;
+}
+
+#formularioContact form textarea{
+    border: 0;
+    border-radius: 15px;
+    background-color: #F5F3F4;
+    width: 100%;
+}
+
+#btn-submit{
+    width: 40%;
+    border-radius: 20px;
+}
+
+.footer{
+    background-color: #BA181B;
+    width: 100%;
+}
+
+#container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 25%;
+        text-align: center;
+    
+        text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px){
+    header h4{
+        font-size: 15px;
+    }
+    header h5{
+        font-size: 8px;
+    }
+
+    #sobreMi h2{
+        font-size: 15px;
+    }
+
+    #sobreMi p{
+        font-size: 8px;
+    }
+
+    #btn-submit{
+        width: 100%;
+    }
+
+    #formularioContact textarea{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header h4{
+        font-size: 18px;
+    }
+    header h5{
+        font-size: 12px;
+    }
+
+    #sobreMi h2{
+        font-size: 18px;
+    }
+
+    #sobreMi p{
+        font-size: 12px;
+    }
+
+    header img{
+        width: 20%;
+    }
+
+    #btn-submit{
+        width: 50%;
+    }
+
+    #formularioContact textarea{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    header img{
+        width: 15%;
+    }
+
+    #btn-submit{
+        width: 40%;
+    }
+
+    #formularioContact textarea{
+        width: 100%;
+    }
 }
