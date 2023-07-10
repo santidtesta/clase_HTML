@@ -1,4 +1,4 @@
-function triplicador(num1) {
+/*function triplicador(num1) {
     return num1*3
 }
 
@@ -34,9 +34,38 @@ function contarDeA_n(contar_de_a, contar_hasta){
     let num = contar_de_a
     
     while (num >= contar_de_a && num <= contar_hasta) {
-        console.log(num)
-        num++
+        result += 
+        
     }
 }
 
 console.log(contarDeA_n(8,12))
+
+DESAFIO FIZZBUZZ v.2
+*/
+let num = 1
+let numUsuario = parseInt(prompt('Indique hasta que numero contar'))
+let fizz_num = parseInt(prompt('Indique los numeros que sean multiplos de qué numero deben ser reemplazados por fizz'))
+let buzz_num = parseInt(prompt('Indique los numeros que sean multiplos de qué numero deben ser reemplazados por buzz'))
+
+var result = '';
+
+for (let i = 0; i <= numUsuario; i++){
+    if(num % fizz_num === 0 && num % buzz_num === 0){
+        result += 'FizzBuzz'
+    }else if (num % buzz_num === 0) {
+        result += 'buzz'
+        
+    }else if (num%fizz_num === 0) {
+        result += fizz
+        
+    }else {
+        result += i
+    }
+
+    if (i < numUsuario) {
+        result += ','
+    }
+}
+console.log(result)
+
