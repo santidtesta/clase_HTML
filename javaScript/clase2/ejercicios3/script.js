@@ -68,4 +68,3 @@ for (let i = 0; i <= numUsuario; i++){
     }
 }
 console.log(result)
-
