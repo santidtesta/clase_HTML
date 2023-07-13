@@ -20,7 +20,12 @@ if (amigos.iOf("Felix") == -1) {
 }else{alert("Tengo un amigo llamado Felix")}
 
 
-let listaDeSuper = ["leche", "Oreo", "Arroz", "carne"]
+let listaDeSuper = []
+
+listaDeSuper[0] = "leche"
+listaDeSuper[1] = "Oreo"
+listaDeSuper[2] = "Arroz"
+listaDeSuper[3] = "carne"
 
 let primero = listaDeSuper[0]
 
@@ -60,12 +65,14 @@ let frasesExclamadas = frases.map(function (frase) {
 // CODEA LA SOLUCIÓN
 console.log(frases); // ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.']
 console.log(frasesExclamadas); // [ '¡Labore sea dolor.!', '¡Justo rebum dolor.!', '¡Stet lorem amet.!' ]
-*/
+
 
 //Reduce Ejercicios 1
-
+*/
 let numbers = [6, 1, 34, 94, 3, 17];
 
+console.log(numbers)
+/*
 
 const mul = numbers.reduce((acc, num) => acc * num)// CODEA LA SOLUCIÓN
 
@@ -85,22 +92,45 @@ console.log(impares) // [3, 7, 13, 99]
 
 let numbers2 = [5, 4, 1, 9, 2]
 
-let max = numbers2.reduce((acc, numero)=>{
-    for (let acc = 0; acc < numbers2.length; acc++) {
-        if (numbers2[acc] > numero) {
-            numbers2.push()
-        }else{}
-        return numbers2[0];
+let max = numbers2.reduce((maximo, numero)=>{
+    for (let maximo = 0; maximo < numbers2.length; maximo++) {
+        if (numbers2[maximo] > numero) {
+            numero = numbers2[maximo]
+        }
+
     }
+
+    return numero;
 } )// CODEA LA SOLUCIÓN
 
 console.log(max)
 // debería mostrar 9
-
+*/
 
 let join = arr => {
-
     // CODEA LA SOLUCIÓN
-   }
+    const arreglo = arr.join('');
+    return arreglo;
+}
    
-   console.log( join( [1,2,3] ) ) // "123"
+console.log(join([1, 2, 3])) // "123"
+
+let numeros = [5, 1, 7, 12, 5, 2, 9, 0, 11, 9, 11]
+let sinRepetidos = numeros.reduce((acc, numero) => { })// CODEA LA SOLUCIÓN
+console.log(sinRepetidos)
+// debería mostrar [ 5, 1, 7, 12, 2, 9, 0, 11 ]
+
+let notasDeTPs = [4, 7, 8, 5, 10]
+let notaFinal = notasDeTPs.reduce((acc, nota) => {
+    for (let acc = 0; acc < notasDeTPs.length; acc++) {
+        
+    }
+
+    return notaFinal
+})// CODEA LA SOLUCIÓN
+
+console.log(notaFinal)
+// debería mostrar 6.8
+
+
+   

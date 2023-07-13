@@ -50,21 +50,8 @@ let buzz_num = parseInt(prompt('Indique los numeros que sean multiplos de qué n
 
 var result = '';
 
-for (let i = 0; i <= numUsuario; i++){
-    if(num % fizz_num === 0 && num % buzz_num === 0){
-        result += 'FizzBuzz'
-    }else if (num % buzz_num === 0) {
-        result += 'buzz'
-        
-    }else if (num%fizz_num === 0) {
-        result += fizz
-        
-    }else {
-        result += i
-    }
-
-    if (i < numUsuario) {
-        result += ','
-    }
+for (let i = 1; i <= numUsuario; i++){
+    
 }
+
 console.log(result)
