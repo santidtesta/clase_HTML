@@ -56,8 +56,8 @@ while(num != 0 || num < 0){
         alert('El numero que ingreso es impar')
     }
 }
-
-DESAFIO FIZZBUZZ
+*/
+//DESAFIO FIZZBUZZ
 
 let num = 1
 
@@ -77,7 +77,7 @@ while(num >= 1 && num <= 100){
     }
 }
 
-
+/*
 Contador de positivos
 
 let numPos = 0

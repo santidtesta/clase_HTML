@@ -43,6 +43,7 @@ console.log(contarDeA_n(8,12))
 
 DESAFIO FIZZBUZZ v.2
 */
+
 let num = 1
 let numUsuario = parseInt(prompt('Indique hasta que numero contar'))
 let fizz_num = parseInt(prompt('Indique los numeros que sean multiplos de qué numero deben ser reemplazados por fizz'))
@@ -50,8 +51,52 @@ let buzz_num = parseInt(prompt('Indique los numeros que sean multiplos de qué n
 
 var result = '';
 
-for (let i = 1; i <= numUsuario; i++){
-    
-}
+ for (let i = 1; i <= numUsuario; i++){
+    if(num % fizz_num === 0 && num % buzz_num === 0){
+        result += 'FizzBuzz'
+    }else if (num % buzz_num === 0) {
+        result += 'buzz'
+        
+    }else if (num%fizz_num === 0) {
+        result += fizz
+        
+    }else {
+        result += i
+    }
+
+    if (i < numUsuario) {
+        result += ','
+    }
+}  
+
+
+
 
 console.log(result)
+
+//DESAFIO FIZZBUZZ
+
+
+/* 
+Lograr que fizzBuzz2 devuelva un String con los números separados por comas.
+Mejorar la Función para que el usuario pueda decidir hasta qué número tiene que contar fizzBuzz2.
+Mejorar la Función para que el usuario pueda ingresar fizz_num y buzz_num para que la sustitución de palabras
+ ocurra en los números múltiplos de los nuevos argumentos de entrada (en vez de solo 3 y 5).
+
+let num = 1
+
+while(num >= 1 && num <= 100){
+    if(num % 5 == 0 && num % 3 == 0){
+        console.log('FizzBuzz')
+        num++
+    }else if (num % 5 == 0) {
+        console.log('Buzz')
+        num++
+    }else if (num%3==0) {
+        console.log('Fizz')
+        num++
+    }else {
+        console.log(num)
+        num++
+    }
+} */

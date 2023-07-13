@@ -116,21 +116,23 @@ let join = arr => {
 console.log(join([1, 2, 3])) // "123"
 
 let numeros = [5, 1, 7, 12, 5, 2, 9, 0, 11, 9, 11]
-let sinRepetidos = numeros.reduce((acc, numero) => { })// CODEA LA SOLUCIÓN
+let sinRepetidos = numeros.reduce((resultado, numero) => { 
+    if (!resultado.includes(numero)) {
+        resultado.push(numero)        
+    }
+    return resultado
+}, [])// CODEA LA SOLUCIÓN
 console.log(sinRepetidos)
 // debería mostrar [ 5, 1, 7, 12, 2, 9, 0, 11 ]
 
-let notasDeTPs = [4, 7, 8, 5, 10]
-let notaFinal = notasDeTPs.reduce((acc, nota) => {
-    for (let acc = 0; acc < notasDeTPs.length; acc++) {
-        
-    }
+let notasDeTPs = [4, 7, 8, 5, 10];
 
-    return notaFinal
-})// CODEA LA SOLUCIÓN
+let notaFinal = notasDeTPs.reduce(function (acumulador, nota) {
+  return acumulador + nota;
+}, 0) / notasDeTPs.length;
 
-console.log(notaFinal)
-// debería mostrar 6.8
+console.log(notaFinal);
+
 
 
    
