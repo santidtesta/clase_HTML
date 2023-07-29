@@ -132,7 +132,3 @@ let notaFinal = notasDeTPs.reduce(function (acumulador, nota) {
 }, 0) / notasDeTPs.length;
 
 console.log(notaFinal);
-
-
-
-   
