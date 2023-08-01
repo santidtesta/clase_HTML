@@ -132,15 +132,15 @@ console.log(resultado)*/
 let mayoresOIgualesA5 = arr => {
     // Codeá la solución
     return arr.filter(numero => numero >= 5)
-   }
-   
+}
+
 
 console.log(mayoresOIgualesA5([3, 6, 8, 21])); // [6, 8, 21]
 
 let numeros = [3, 7, 6, 13, 2, 24, 99];
 
-   // Codeá la solución
-   let pares = numeros.filter(numero => numero % 2 == 0)
+// Codeá la solución
+let pares = numeros.filter(numero => numero % 2 == 0)
 
 console.log(pares); // [6, 2, 24]
 
@@ -164,38 +164,53 @@ const mix = [
     'Sit et dolor.',
     null,
     null,
-    [ 1, 2, 3],
+    [1, 2, 3],
     'Dolore.'
-   ];
-   
-   const soloStrings = mix.filter(dato => typeof dato === 'string')
-   
-   console.log(soloStrings);
-   // Debería mostrar
-   // [ 'Ut vero.', 'Diam rebum nonumy et.', 'Kasd stet.', 'Sit et dolor.', 'Dolore.' ]
+];
+
+const soloStrings = mix.filter(dato => typeof dato === 'string')
+
+console.log(soloStrings);
+// Debería mostrar
+// [ 'Ut vero.', 'Diam rebum nonumy et.', 'Kasd stet.', 'Sit et dolor.', 'Dolore.' ]
 
 
-   function fibonacci(numeroPosicion) {
+function fibonacci(numeroPosicion) {
     if (numeroPosicion <= 0) {
-      return 0;
+        return 0;
     } else if (numeroPosicion === 1) {
-      return 1;
+        return 1;
     } else {
-      let numAnterior = 0;
-      let numActual = 1;
-      let resultado = 0;
-  
-      for (let i = 2; i <= numeroPosicion; i++) {
-        resultado = numAnterior + numActual;
-        numAnterior = numActual;
-        numActual = resultado;
-      }
-  
-      return resultado;
+        let numAnterior = 0;
+        let numActual = 1;
+        let resultado = 0;
+
+        for (let i = 2; i <= numeroPosicion; i++) {
+            resultado = numAnterior + numActual;
+            numAnterior = numActual;
+            numActual = resultado;
+        }
+
+        return resultado;
     }
-  }
-  
-  // Ejemplos de uso
-  console.log("Fibonacci (2):", fibonacci(2)); // Debería mostrar 1
-  console.log("Fibonacci (5):", fibonacci(5)); // Debería mostrar 3
-  console.log("Fibonacci (8):", fibonacci(8)); // Debería mostrar 13
+}
+
+// Ejemplos de uso
+console.log("Fibonacci (2):", fibonacci(2)); // Debería mostrar 1
+console.log("Fibonacci (5):", fibonacci(5)); // Debería mostrar 3
+console.log("Fibonacci (8):", fibonacci(8)); // Debería mostrar 13
+
+function sumArray(arreglo) {
+    let suma = 0 
+
+    arreglo.forEach(numero => {
+        suma += numero
+    });
+
+    return suma
+}
+
+console.log(sumArray([1,2,3])) // 6
+console.log(sumArray([10, 3, 10, 4])) // 27
+console.log(sumArray([-5,100])) // 95 
+
