@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://i.imgur.com/jnCXdAx.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sigue-mouse {
+    position: fixed;
+}
