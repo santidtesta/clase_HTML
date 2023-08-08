@@ -1,0 +1,27 @@
+body{
+    background: url(https://media.giphy.com/media/lQIo9t7pfVPEzDFory/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.container{
+    background-color: #00025ea8;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-radius: 10%;
+}
+
+input{
+    width: 70%;
+    height: 30px;
+    border-radius: 50px;
+    border: 0;
+    padding: 10px;
+    font-size: 15px;
+}
