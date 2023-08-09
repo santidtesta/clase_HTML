@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cargar Pedidos</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Delivery de Compra de Libros</h1><hr>
+
+        <h3>Datos del Pedido</h3>
+        <div class="datos-pedido">
+            <input type="text" name="nombreLibro" id="libro" placeholder="Nombre del Libro">
+            <input type="text" name="nombreAutor" id="autor" placeholder="Autor del Libro">
+            <input type="text" name="direccionComprador" id="direccion" placeholder="Direccion del Comprador">
+        </div>
+        <div class="btn-container">
+            <button id="cargar">CARGAR</button>
+            <button id="refrescar"><i class="fas fa-redo-alt fa"></i>REFRESCAR</button>
+        </div>
+        <div class="confirmaciones">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/be6f6f9a32.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
